@@ -1,0 +1,46 @@
+/*use compass as reset*/
+/*@import "compass";*/
+@import 'colors';
+@import 'mediaQueries';
+@import 'profile';
+/*@import 'mixin';*/
+
+// Font weights
+$light: 100;
+$regular: 200;
+$bold: 400;
+
+/*base font*/
+$base-font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$base-font-weight: $regular;
+$base-font-size: 16px;
+$base-line-height: 1.4;
+
+/*fixed font*/
+$fixed-font-family: monospace;
+$fixed-font-size: 85%;
+$fixed-line-height: $base-line-height;
+
+/*headings*/
+$header-font-weight: $bold;
+
+p {
+	font-size: 24px;
+}
+
+.panel {
+	border: 3px solid $silver-chalice;
+	margin: 10px;
+	background-color: $white-smoke;
+}
+.littlePanel {
+	@extend .panel;
+	font-size: 15px;
+	padding: 15px;
+}
+.bigPanel {
+	@extend .panel;
+	font-size: 30px;
+	padding: 15px;
+}
+/*@import "modules/all";*/
